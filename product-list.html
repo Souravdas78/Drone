@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPorter - Drone Delivery</title>
+
+    <!-- bootstrap 5 css  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- swiper css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<style>
+    header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+body {
+  padding-top: 100px; /* Adjust based on your navbar height */
+   background-color: black;
+}
+</style>
+
+<body>
+
+    <!--=====================
+         Header Section
+    =====================-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    <span>AirPorter</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0  mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  scroll" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link active scroll" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link scroll" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn login-btn" href="./login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- products  -->
+    <!-- Products Section -->
+    <section class="products-section py-5  text-light">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Sidebar Filters -->
+                <aside class="col-lg-3 col-md-4 mb-4">
+                    <div class="filters p-4 rounded shadow-sm">
+                        <h5 class="mb-3">FILTERS</h5>
+
+                        <!-- Brands -->
+                        <div class="mb-4">
+                            <h6 class="text-orange">BRANDS</h6>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" checked> DJI</li>
+                                <li><input type="checkbox"> Autel Robotics</li>
+                                <li><input type="checkbox"> Skydio</li>
+                                <li><input type="checkbox"> Parrot</li>
+                                <li><input type="checkbox"> EatoFPV</li>
+                                <li class="text-muted">+10 more</li>
+                            </ul>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="mb-4">
+                            <h6 class="text-orange">PRICE</h6>
+                            <input type="range" class="form-range" min="400" max="4000">
+                            <small>$400 – $4000+</small>
+                        </div>
+
+                        <!-- Category -->
+                        <div class="mb-4">
+                            <h6 class="text-orange">CATEGORY</h6>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox"> Filming & Photography</li>
+                                <li><input type="checkbox"> Delivery Service</li>
+                                <li><input type="checkbox"> Courier</li>
+                            </ul>
+                        </div>
+
+                        <!-- Discount -->
+                        <div>
+                            <h6 class="text-orange">DISCOUNT RANGE</h6>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox"> 10% and above</li>
+                                <li><input type="checkbox"> 25% and above</li>
+                                <li><input type="checkbox"> 75% and above</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9 col-md-8">
+                    <div class="row g-4">
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product1.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">3.4 ★ | 3.9k</span>
+                                </div>
+                                <h6>DJI Mini 4 Pro</h6>
+                                <p class="small ">Potter ipsum wand of parchment hanser.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(75% OFF)</span></h6>
+                            </article>
+                        </div>
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product2.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">4.0 ★ | 4.5k</span>
+                                </div>
+                                <h6>Autel EVO Lite+</h6>
+                                <p class="small ">Potter ipsum wand of parchment hanser.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(25% OFF)</span></h6>
+                            </article>
+                        </div>
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product3.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">5.2 ★ | 5.8k</span>
+                                </div>
+                                <h6>Parrot Anafi AI</h6>
+                                <p class="small ">Potter ipsum wand elf parchment hansor.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(25% OFF)</span></h6>
+                            </article>
+                        </div>
+
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product4.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">3.4 ★ | 3.9k</span>
+                                </div>
+                                <h6>DJI Mini 4 Pro</h6>
+                                <p class="small ">Potter ipsum wand of parchment hanser.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(25% OFF)</span></h6>
+                            </article>
+                        </div>
+
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product5.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">4.0 ★ | 4.5k</span>
+                                </div>
+                                <h6>Autel EVO Lite+</h6>
+                                <p class="small ">Potter ipsum wand of parchment hanser.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(25% OFF)</span></h6>
+                            </article>
+                        </div>
+
+
+                        <!-- Product Card -->
+                        <div class="col-lg-4 col-md-6">
+                            <article class="product-card p-3 rounded shadow-sm">
+                                <img src="./assets/images/product-list/product6.svg" class="img-fluid mb-3" alt="Drone">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="badge bg-warning text-dark">4.0 ★ | 1.6k</span>
+                                </div>
+                                <h6>Autel EVO Lite+</h6>
+                                <p class="small ">Potter ipsum wand of parchment hanser.</p>
+                                <h6 class="text-light">$1500 <span class="text-danger">(25% OFF)</span></h6>
+                            </article>
+                        </div>
+
+
+
+                        <!-- Add more product cards here -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-md-4">
+                    <a class="Footer-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="logo">
+                        <span>AirPorter</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur. Eu mattis morbi id pharetra. Erat etiam est nunc volutpat
+                        arcu
+                        tincidunt vulputate. Vivamus laoreet semper vestibulum accumsan suspendisse vitae.</p>
+                    <p><strong>Stay in touch :</strong></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">• Home</a>
+                        <a href="#">• About us</a>
+                        <a href="#">• Service</a>
+                        <a href="#">• Contact</a>
+                        <a href="#">• FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">ADDRESS</h5>
+                    <p>• 1298 Louisa Ville, Southaven 33597-4434<br>• 31258 Marquardt Course.</p>
+                    <p><strong>Email us :</strong><br>• Winifred6@hotmail.com</p>
+                    <p><strong>Call us :</strong><br>• 1-534-697-2022</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-4">
+                <p>Copyright © 2025. All Rights Reserved By AirPorter</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <!-- bootstrap js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+    <!-- swiper js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jquery js  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

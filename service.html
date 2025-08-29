@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPorter - Drone Delivery</title>
+
+    <!-- bootstrap 5 css  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- swiper css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--=====================
+         Header Section
+    =====================-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    <span>AirPorter</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0  mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  scroll" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link active scroll" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link scroll" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn login-btn" href="./login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="service-hero-section hero-page d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container text-start text-white">
+            <h1 class="fw-bold display-4">Our Service</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html" class="text-white text-uppercase text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Service</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Our Drone Service And Delivery Section -->
+    <section class="service-section">
+        <div class="bg-text">DRONE SERVICE</div>
+
+        <!-- Floating Drone Images -->
+        <img src="./assets/images/drone-bg.png" alt="Drone" class="drone-img drone-top-right">
+
+
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="section-heading fw-semibold">Our Service</span>
+                <h2 class="fw-bold text-white mt-2">Our Drone Service And Delivery</h2>
+            </div>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="assets/images/service1.svg" alt="Railway Service">
+                        <h6>Railway Service</h6>
+                        <p>Potter ipsum wand elf parchment wingardium...</p>
+                        <a href="#" class="btn explore-btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card highlight">
+                        <img src="assets/images/service2.svg" alt="Filming & Photography">
+                        <h6>Filming & Photography</h6>
+                        <p>Potter ipsum wand elf parchment wingardium...</p>
+                        <a href="#" class="btn explore-btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="assets/images/service3.svg" alt="Delivery Or Courier">
+                        <h6>Delivery Or Courier</h6>
+                        <p>Potter ipsum wand elf parchment wingardium...</p>
+                        <a href="#" class="btn explore-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="drone-service py-5 text-center position-relative">
+        <!-- Floating Drone Images -->
+        <div class="first-drone">
+            <img src="./assets/images/drone-bg.png" class="floating-drone drone-top-left" alt="drone">
+        </div>
+
+        <div class="container">
+            <h6 class="section-heading fw-semibold">How It’s Work</h6>
+            <h2 class="fw-bold text-white mb-5">How Our Drone <br> Served</h2>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="service-box p-4">
+                        <img src="./assets/images/shop-icon.svg" alt="">
+                        <h5 class="fw-bold text-white mt-3">Place Your Order</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-box p-4">
+                        <img src="./assets/images/pickup.svg" alt="">
+                        <h5 class="fw-bold text-white mt-3">Pick-up & Flight</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-box p-4">
+                        <img src="./assets/images/safe-delivery.svg" alt="">
+                        <h5 class="fw-bold text-white mt-3">Safe Delivery</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="service-box p-4">
+                        <img src="./assets/images/expert-delivery.svg" alt="">
+                        <h5 class="fw-bold text-white mt-3">Expert Operator</h5>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-orange mt-4 px-4 py-2 rounded-pill">Explore Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-md-4">
+                    <a class="Footer-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="logo">
+                        <span>AirPorter</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur. Eu mattis morbi id pharetra. Erat etiam est nunc volutpat
+                        arcu
+                        tincidunt vulputate. Vivamus laoreet semper vestibulum accumsan suspendisse vitae.</p>
+                    <p><strong>Stay in touch :</strong></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">• Home</a>
+                        <a href="#">• About us</a>
+                        <a href="#">• Service</a>
+                        <a href="#">• Contact</a>
+                        <a href="#">• FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">ADDRESS</h5>
+                    <p>• 1298 Louisa Ville, Southaven 33597-4434<br>• 31258 Marquardt Course.</p>
+                    <p><strong>Email us :</strong><br>• Winifred6@hotmail.com</p>
+                    <p><strong>Call us :</strong><br>• 1-534-697-2022</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-4">
+                <p>Copyright © 2025. All Rights Reserved By AirPorter</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- JS -->
+    <!-- bootstrap js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+    <!-- swiper js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jquery js  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPorter - Drone Delivery</title>
+
+    <!-- bootstrap 5 css  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- swiper css -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--=====================
+         Header Section
+    =====================-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    <span>AirPorter</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mb-2 mb-lg-0  mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link  scroll" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link scroll" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item scroll">
+                            <a class="nav-link active scroll" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn login-btn" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero-section hero-page d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container text-start text-white">
+            <h1 class="fw-bold display-4">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html" class="text-white text-uppercase text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- form section  -->
+
+    <section class="contact-section  d-flex align-items-center">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                <!-- Left Column (Form) -->
+                <div class="col-lg-6 col-md-12">
+                    <div class=" p-4">
+                        <h3 class="mb-3 fw-bold">Let Us Know !</h3>
+                        <p class=" small mb-4">
+                            Lorem ipsum dolor sit amet consectetur. Quis et morbi eget arcu morbi metus tristique
+                            sollicitudin.
+                            Lectus massa risus ac mattis id.
+                        </p>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label  text-glass-color">Full Name</label>
+                                <input type="text" class="form-control " placeholder="Enter Full Name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-glass-color">Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Email ID">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-glass-color">Phone</label>
+                                <input type="tel" class="form-control" placeholder="Enter Your Phone No">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-glass-color">Message</label>
+                                <textarea rows="4" class="form-control" placeholder="Write Here Something.."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-orange">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column (Info) -->
+               
+                <div class="col-lg-5 col-md-12">
+                    <div class="p-4">
+                        <ul class="list-unstyled ">
+                            <!-- Location -->
+                            <li class="mb-4">
+                                <i class="fa-solid fa-location-dot me-2"></i>
+                                <strong>Our Location</strong><br>
+                                <small>1298 Louisa Ville, Southaven 33597-4434<br>31258 Marquardt Course.</small>
+                            </li>
+
+                            <!-- Email -->
+                            <li class="mb-4">
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                <strong>Email us</strong><br>
+                                <small>WinifredS@hotmail.com</small>
+                            </li>
+
+                            <!-- Call & Follow (side by side on desktop, stacked on mobile) -->
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <i class="fa-solid fa-phone me-2"></i>
+                                    <strong>Call us :</strong><br>
+                                    <small>1-534-697-2022<br>1-534-697-2022</small>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <strong>Follow Us</strong><br>
+                                    <a href="#" class="text-glass-color me-2"><i class="fab fa-facebook"></i></a>
+                                    <a href="#" class="text-glass-color me-2"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-glass-color"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo and Description -->
+                <div class="col-md-4">
+                    <a class="Footer-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="logo">
+                        <span>AirPorter</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur. Eu mattis morbi id pharetra. Erat etiam est nunc volutpat
+                        arcu
+                        tincidunt vulputate. Vivamus laoreet semper vestibulum accumsan suspendisse vitae.</p>
+                    <p><strong>Stay in touch :</strong></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">• Home</a>
+                        <a href="#">• About us</a>
+                        <a href="#">• Service</a>
+                        <a href="#">• Contact</a>
+                        <a href="#">• FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">ADDRESS</h5>
+                    <p>• 1298 Louisa Ville, Southaven 33597-4434<br>• 31258 Marquardt Course.</p>
+                    <p><strong>Email us :</strong><br>• Winifred6@hotmail.com</p>
+                    <p><strong>Call us :</strong><br>• 1-534-697-2022</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-4">
+                <p>Copyright © 2025. All Rights Reserved By AirPorter</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <!-- bootstrap js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+
+    <!-- swiper js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- jquery js  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
